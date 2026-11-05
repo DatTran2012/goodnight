@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#11152f">
+  <meta name="description" content="Một lời chúc ngủ ngon dịu dàng gửi đến người đặc biệt.">
+  <title>Good Night, My Moonlight 🌙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="stars" id="stars"></div>
+    <div class="moon"><span></span></div>
+    <div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+    <div class="shooting-star"></div>
+    <div class="horizon-glow"></div>
+  </div>
+
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Good Night home"><span class="brand-moon">☾</span> little moon letter</a>
+      <button class="sound-toggle" id="musicToggle" type="button" aria-pressed="false">
+        <span class="sound-icon">♫</span><span id="musicLabel">Bật nhạc lofi</span>
+      </button>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow"><span class="tiny-star">✦</span> A LITTLE NOTE FOR YOU <span class="tiny-star">✦</span></div>
+      <h1>Good night,<br><em>my moonlight.</em></h1>
+      <p class="intro">Gửi đến <strong>người đặc biệt</strong> một chút dịu dàng<br class="desktop-break"> trước khi ngày hôm nay khép lại.</p>
+
+      <div class="anime-scene" aria-label="Minh họa cô gái anime ngồi bên cửa sổ dưới bầu trời đêm">
+        <div class="window-frame">
+          <div class="window-sky">
+            <span class="window-moon"></span>
+            <span class="window-star s1">✦</span><span class="window-star s2">✧</span><span class="window-star s3">·</span>
+            <div class="distant-hills"></div>
+          </div>
+          <div class="window-cross vertical"></div><div class="window-cross horizontal"></div>
+          <div class="curtain curtain-left"></div><div class="curtain curtain-right"></div>
+        </div>
+        <div class="room-glow"></div>
+        <div class="desk"></div>
+        <div class="book"></div><div class="tea-cup"><i></i></div>
+        <div class="girl">
+          <div class="hair-back"></div>
+          <div class="body"></div>
+          <div class="neck"></div>
+          <div class="face">
+            <span class="ear"></span><span class="eye eye-left"></span><span class="eye eye-right"></span>
+            <span class="blush blush-left"></span><span class="blush blush-right"></span><span class="mouth"></span>
+          </div>
+          <div class="hair-top"></div><div class="hair-fringe"></div>
+          <div class="hair-side"></div>
+        </div>
+        <div class="scene-caption">somewhere under the same sky <span>☾</span></div>
+      </div>
+
+      <button class="primary-button" id="openLetter" type="button">
+        <span>Đọc lời nhắn nhỏ</span><span class="button-sparkle">✧</span>
+      </button>
+      <p class="hint">một chiếc thư nhỏ dành riêng cho em</p>
+    </section>
+
+    <section class="letter-section" id="letterSection" aria-live="polite">
+      <div class="letter-card">
+        <div class="letter-top"><span>✦ A LETTER FOR YOU</span><span>♡</span></div>
+        <div class="letter-content" id="typedMessage"></div>
+        <div class="letter-sign">ngủ ngon nhé, người đặc biệt <span>♡</span></div>
+      </div>
+    </section>
+
+    <section class="secret-section">
+      <button class="envelope" id="envelope" type="button" aria-label="Mở phong thư bí mật">
+        <span class="envelope-heart">♥</span><span class="envelope-label">mở khi em cần một cái ôm</span>
+      </button>
+      <p class="secret-hint">psst... có một điều bí mật ở đây</p>
+    </section>
+
+    <section class="hug-section" id="hugSection">
+      <div class="hug-card">
+        <div class="hug-emoji">૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</div>
+        <h2>Một cái ôm thật chặt!</h2>
+        <p>Dù hôm nay có thế nào, em cũng đã cố gắng nhiều rồi.<br>Hãy thả lỏng đôi vai và nghỉ ngơi một chút nhé.</p>
+        <button id="closeHug" class="text-button" type="button">Mình nhận được rồi ♡</button>
+      </div>
+    </section>
+
+    <footer>made with a little stardust <span>✦</span> for you</footer>
+  </main>
+
+  <div class="toast" id="toast" role="status">Ước gì có thể gửi em một cái ôm ngoài đời ♡</div>
+  <script src="script.js"></script>
+</body>
+</html>
